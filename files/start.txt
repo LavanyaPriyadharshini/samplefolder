@@ -1,0 +1,3 @@
+hi this is a file created inside the files folder, this is a data file which have the datas
+
+//so now go to server.mjs and give this file path there to access this file in the output
