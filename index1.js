@@ -10,7 +10,7 @@
 
 // 4. give command "npm i date-fns" ----- node modules and package-lock json will get installed
 
-// IMPORTANT ------- GITIGNORE
+// IMPORTANT ------- GITIGNORE --- i have ignored 2 files , and decided not to move to git, it is node_modules and package.lock.json
 
 //if we dont want to copy some of the files to git or ignore certain files to git, we use the concept of "gitignore"
 //so if you want to ignore nodemodules folder to be copied to the git, you create a file "gitignore"
@@ -87,3 +87,19 @@ console.log(uuid())
 
 //while running each time you get a unique id
 //when we want a unique id for generating we use this 
+
+
+const logEvents =require('./logevents')
+
+const EventEmitter = require('events');
+
+class MyEmitter extends EventEmitter {}
+
+const myEmitter = new MyEmitter();
+myEmitter.on('log', (msg) => {
+logEvents(msg)});
+myEmitter.emit('log','log event emitted');
+
+
+//run the command "npm run dev"
+//you will see a log folder created with file eventfile.txt , when you open that you will see the log entry details

@@ -38,9 +38,3 @@ console.log("this is lavanya") //when you just save , you can see the output, th
 
 // give command --- "npm i nodemon -D" --- it creates dev dependencies
 
-
-// production denpendencies
-// "dependencies": {
-//     "date-fns": "^4.1.0",
-//     "uuid": "^11.1.0"
-//   },
